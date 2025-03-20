@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha Natarajan - Portfolio</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Arial', sans-serif;
+            color: #2a2a2a;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border: 5px solid #f5a623;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero .email {
+            font-size: 1rem;
+            color: #f5a623;
+        }
+
+        /* Achievements Section */
+        .achievements {
+            background-color: #ffffff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .achievements h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .achievement {
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .achievement h3 {
+            font-size: 1.2rem;
+            color: #f5a623;
+        }
+
+        /* Sports Interest Section */
+        .sports-interest {
+            background-color: #f0f0f0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .sports-interest h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .sports-interest p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skills {
+            background-color: #ffffff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Interesting Facts Section */
+        .interesting-facts {
+            background-color: #f0f0f0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .interesting-facts h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .facts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .facts li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Languages Section */
+        .languages {
+            background-color: #ffffff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .languages h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #ffffff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer a {
+            color: #f5a623;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .projects h2 {
+                font-size: 2rem;
+            }
+
+            .skills, .projects, .contact, .achievements, .languages, .sports-interest, .interesting-facts {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="your-image.jpg" alt="Neha Natarajan" class="hero-img">
+        <h1>Hi, I'm Neha. N</h1>
+        <p>B.Sc. Computer Science, 2nd Year</p>
+        <p>Loganathan Narayanasamy Government Arts and Science College</p>
+        <p class="email">Email: <a href="mailto:imneha481@gmail.com">imneha481@gmail.com</a></p>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <h2>My Achievements</h2>
+        <div class="achievement">
+            <h3>2nd Place in Department Project Competition</h3>
+            <p>Won 2nd place for a project on "VR and AR in Everyday Life" at Loganathan Narayanasamy Government Arts and Science College.</p>
+        </div>
+        <div class="achievement">
+            <h3>Completed a VR and AR Project</h3>
+            <p>Developed a working VR and AR application focused on practical uses in daily life, showcasing innovative technology.</p>
+        </div>
+    </section>
+
+    <!-- Sports Interest Section -->
+    <section class="sports-interest">
+        <h2>My Passion for Sports</h2>
+        <p>
+            I am not only passionate about technology, but I also have a deep love for sports. Whether it's participating in team events or individual challenges, I believe sports teach invaluable lessons in teamwork, perseverance, and discipline. 
+            I enjoy playing Silambam, Running, Throwball, and Volleyball. These activities help me stay active and energized, while also building a mindset of focus and resilience.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Silambam (Traditional Martial Art)</li>
+            <li>Running</li>
+            <li>Throwball</li>
+            <li>Volleyball</li>
+            <li>Python</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>VR and AR Development</li>
+            <li>Problem-solving</li>
+        </ul>
+    </section>
+
+    <!-- Interesting Facts Section -->
+    <section class="interesting-facts">
+        <h2>Interesting Facts About Me</h2>
+        <div class="facts">
+            <ul>
+                <li>I'm passionate about learning new technologies, especially in the fields of AR and VR.</li>
+                <li>I love participating in hackathons and coding challenges to solve real-world problems.</li>
+                <li>In my free time, I enjoy exploring new places and taking photographs of nature.</li>
+                <li>I am always trying to improve my coding skills by working on various personal projects.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages">
+        <h2>Languages I Speak</h2>
+        <ul>
+            <li>Tamil (Native)</li>
+            <li>English (Fluent)</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="your-mail-handler-script.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/neha-n-626927293" target="_blank">LinkedIn</a>
+        <a href="https://github
